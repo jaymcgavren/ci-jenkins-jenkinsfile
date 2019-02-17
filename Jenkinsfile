@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Download the code
-                git url: 'https://github.com/treehouse-projects/ci-jenkins-junit.git'
+                git url: 'https://github.com/jaymcgavren/ci-jenkins-junit.git'
                 // Compile the main class
                 sh 'javac -d target -sourcepath src/main/java src/main/java/com/example/math/Calculator.java'
             }
